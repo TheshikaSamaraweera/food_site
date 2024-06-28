@@ -1,0 +1,72 @@
+.titleBar{
+  margin-top: 90px;
+  text-align: center;
+}
+.twoColumnLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.column1 {
+  flex: 1;
+  margin-left: 80px;
+  
+  
+}
+.column2 {
+  flex: 1;
+  margin-right: 50px;
+ 
+}
+
+.column1 img{
+  margin-bottom: -15px;
+  
+  margin-left: 0;
+}
+
+.column2 img{
+  margin-top: -15px;
+  margin-right: 150px;
+}
+.block {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.block h3 {
+  font-size: 18px;
+  background-color: rgb(5, 129, 129);
+  width: 300px; 
+  height: 40px;  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.block img {
+  width: 350px; 
+   height: 250px;
+  display: block;
+   
+}
+
+.block p {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(11, 150, 150);
+  width: 300px; 
+  height: 100px;
+  margin-left: 0;
+  margin-top: -13px;
+  text-align: justify;
+  padding: 10px;
+}
+

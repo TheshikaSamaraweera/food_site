@@ -1,0 +1,127 @@
+.searchItem {
+  border: 1px solid rgb(59, 58, 58);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+}
+
+.siImg {
+  width: 33%; /* Make images take up full width on smaller screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.siDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.siTitle {
+  font-size: 20px;
+  color: #020d14;
+  text-align: center; /* Center the title */
+  font-weight: bold;
+}
+
+.siFloorNum {
+  font-size: 18px;
+  text-align: center; /* Center the floor number */
+}
+
+.siWifiOp {
+  font-size: 12px;
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+ 
+  }
+
+.siSubtitle {
+  font-size: 12px;
+  font-weight: bold;
+ 
+}
+
+.siFeatures {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.siCancelOp {
+  font-size: 16px;
+  color: #008009;
+  font-weight: bold;
+  text-align: center; /* Center the cancellation label */
+  margin-top: 5px;
+}
+
+.siCancelOpSubtitle {
+  font-size: 15px;
+  color: #074e45;
+  text-align: center; /* Center the cancellation subtitle text */
+}
+
+.siDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.siRating {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; /* Center the rating and button */
+}
+
+.siRating>span {
+  font-weight: 500;
+}
+
+.siRating>button {
+  background-color: #031938;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+.siDetailTexts {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.siPrice {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right; 
+}
+
+.siTaxOp {
+  font-size: 12px;
+  color: gray;
+  text-align: right; 
+}
+.siCheckButton{
+  background-color: #051a29;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  
+  margin-left: auto;
+}

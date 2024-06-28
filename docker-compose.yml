@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_server_1
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - hotel_network
+
+  backend:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: api_container
+    ports:
+      - "8800:8800"
+    environment:
+      - MONGO_URL=mongodb+srv://shakya:shakya@cluster0.divsudx.mongodb.net/hotel?retryWrites=true&w=majority
+    depends_on:
+      - mongodb
+    networks:
+      - hotel_network
+
+  frontend:
+    build:
+      context: ./hotel
+      dockerfile: Dockerfile
+    container_name: hotel_container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - hotel_network
+
+volumes:
+  mongo_data:
+
+networks:
+  hotel_network:
